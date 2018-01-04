@@ -9,7 +9,7 @@ int main()
     int birthYear;
 
     cout << "What is your name? " << flush;
-    cin >> yourName;
+    getline(cin, yourName);
 
     cout << "What year where you born? ";
     cin >> birthYear;
