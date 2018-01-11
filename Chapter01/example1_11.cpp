@@ -12,7 +12,7 @@ int main()
     double e = 2.71;
 
     cout << "An in-memory stream" << endl;
-    strbuf << "luckynumber" << lucky << endl
+    strbuf << "luckynumber: " << lucky << endl
            << "pi: " << pi << endl
            << "e: " << e << endl;
 
