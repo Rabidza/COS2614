@@ -2,7 +2,7 @@
 Run the program excerpted in Example 1.11 as written and then
 • Modify it so that it gets the filename from the user as an STL string fileName
 before writing or reading. You need to use the function fileName.c_str() to
-convert the string to a form acceptable to the open() function. DONE
+convert the string to a form acceptable to the open() function. DONE??
 • Modify it so that it makes sure that the file specified by the user does not already
 exist (or that it is okay to overwrite if it does exist) before opening it for output.
 • Explain what happens if you read the individual numbers with variables of
