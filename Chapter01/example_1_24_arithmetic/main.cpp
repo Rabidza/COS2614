@@ -25,9 +25,9 @@ int main()
 
     /* if () ... else approach */
     if (x * j <= z)
-    cout << x * j << " <= " << z << endl ;
+        cout << x * j << " <= " << z << endl ;
     else
-    cout << x * j << " > " << z << endl;
+        cout << x * j << " > " << z << endl;
 
     return 0;
 }
