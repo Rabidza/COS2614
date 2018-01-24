@@ -17,8 +17,9 @@ int main (int argc, char* argv[])
     QApplication app(argc, argv);
     QTextStream cout(stdout);
     int answer = 0;
+    bool ok;
     do {
-        bool ok;
+
         double Celsius = QInputDialog::getDouble(0, "Enter Degrees Celsius", "Degrees: ", 0.00, -10000, 10000, 2, &ok);
         double Fahrenheit;
         if (ok)
@@ -27,9 +28,8 @@ int main (int argc, char* argv[])
 
             QString response = QString("%1 Degrees Celsius = %2 Degrees Fahrenheit").arg(Celsius).arg(Fahrenheit);
             answer = QMessageBox::question(0, "Calculate Again?", response, QMessageBox::Yes | QMessageBox::No);
-            ok = false;
         }
-    } while (answer == QMessageBox::Yes);
+    } while (answer == QMessageBox::Yes && ok);
 
     cout << "Celsius\tFahrenheit" << endl;
     for (int i = 0; i <= 100; i+=5)
