@@ -2,7 +2,7 @@
 #define COMPLEX_H
 
 #include <string>
-using namespaces std;
+using namespace std;
 
 class Complex
 {
