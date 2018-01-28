@@ -16,7 +16,8 @@ TEMPLATE = app
 
 
 SOURCES += \
-    fraction.cpp
+    fraction.cpp \
+    fraction-client.cpp
 
 HEADERS += \
     fraction.h
