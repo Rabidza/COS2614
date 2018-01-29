@@ -16,7 +16,8 @@ TEMPLATE = app
 
 
 SOURCES += \
-    qstd.cpp
+    qstd.cpp \
+    qtio-demo.cpp
 
 HEADERS += \
     qstd.h

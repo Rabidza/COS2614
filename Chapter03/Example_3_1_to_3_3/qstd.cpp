@@ -13,3 +13,23 @@ bool qstd::yes(QString question)
     ans = cin.readLine();
     return (ans.startsWith("Y", Qt::CaseInsensitive));
 }
+
+int qstd::promptInt(int base /* =10 */)
+{ /* Usage: int n = promptInt(); */
+    QString numstr;
+    int result;
+    bool ok;
+    cout << ": " << flush;
+    while (1)
+    {
+        numstr = cin.readLine();
+        result = numstr.toInt(&ok, base);
+        if (!ok)
+        {
+            cout << "Invalid number. Try again: ";
+            cout.flush();
+        }
+        else
+            return result;
+    }
+}
