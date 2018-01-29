@@ -15,7 +15,9 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += \
+    static.cpp \
+    static-test.cpp
 
 HEADERS += \
     static.h
