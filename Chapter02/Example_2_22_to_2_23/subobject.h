@@ -1,6 +1,10 @@
 #ifndef SUBOBJECT_H
 #define SUBOBJECT_H
 
+#include <QTextStream>
+
+QTextStream cout(stdout);
+
 class Point
 {
 public:
@@ -28,7 +32,13 @@ public:
 
     }
 
-    Square
+    Square(const Point& ul, const Point& lr)
+        : m_UpperLeft(ul), m_LowerRight(lr)
+    {
+
+    }
+private:
+    Point m_UpperLeft, m_LowerRight;
 };
 
 #endif // SUBOBJECT_H
