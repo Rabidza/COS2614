@@ -18,7 +18,7 @@ namespace qstd
     int promptInt(int base = 10);
     double promptDouble();
     void promptOutputFile(QFile& outfile);
-    void promptInputFile(Qfile& infile);
+    void promptInputFile(QFile& infile);
 };
 
 #endif // QSTD_H
