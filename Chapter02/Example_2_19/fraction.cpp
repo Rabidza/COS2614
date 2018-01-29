@@ -1,7 +1,7 @@
 class Fraction
 {
 public:
-    Fraction(int n)
+    Fraction(int n)                  /* Single argument ctor defines a conversion from int. */
         : m_Numer(n), m_Denom(1)
     {
 
@@ -22,13 +22,13 @@ private:
 int main()
 {
     int i;
-    Fraction frac(8);
-    Fraction frac2 = 5;
-    frac = 9;
-    frac = (Fraction) 7;
-    frac = Fraction(6);
-    frac = static_cast<Fraction>(6);
-    frac = frac2.times(19);
+    Fraction frac(8);                /* Conversion constructor call. */
+    Fraction frac2 = 5;              /* Copy init (calls conversion ctor too). */
+    frac = 9;                        /* Conversion followed by assignment. */
+    frac = (Fraction) 7;             /* C-style typecast (deprecated). */
+    frac = Fraction(6);              /* Explicit temporary, also a C++ typecast. */
+    frac = static_cast<Fraction>(6); /* Preferred ANSI style typecast. */
+    frac = frac2.times(19);          /* Implicit call to the conversion constructor. */
 
     return 0;
 }
