@@ -16,7 +16,8 @@ TEMPLATE = app
 
 
 SOURCES += \
-    date.cpp
+    date.cpp \
+    date-test.cpp
 
 HEADERS += \
     date.h
