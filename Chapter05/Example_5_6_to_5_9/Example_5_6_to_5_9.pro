@@ -15,7 +15,8 @@ CONFIG   -= app_bundle
 TEMPLATE = app
 
 
-SOURCES +=
+SOURCES += \
+    complex.cpp
 
 HEADERS += \
     complex.h

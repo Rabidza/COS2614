@@ -5,9 +5,9 @@ class Complex
 {
     //binary nonmember friend function declarations
     friend ostream& operator<<(ostream& out, const Complex& c);
-    friend complex operator-(const Complex& c1, const Complex& c2);
-    friend complex operator*(const Complex& c1, const Complex& c2);
-    friend complex operator/(const Complex& c1, const Complex& c2);
+    friend Complex operator-(const Complex& c1, const Complex& c2);
+    friend Complex operator*(const Complex& c1, const Complex& c2);
+    friend Complex operator/(const Complex& c1, const Complex& c2);
 
 public:
     Complex(double re = 0.0, double im = 0.0);
