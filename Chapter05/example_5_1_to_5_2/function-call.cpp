@@ -20,10 +20,10 @@ public:
         cout << m_Val << "\tdemo(int) const" << endl;
     }
 
-    void demo(const int& n)
-    {
-        cout << ++m_Val << "\tdemo(int&)" << endl;
-    }
+//    void demo(const int& n)
+//    {
+//        cout << ++m_Val << "\tdemo(int&)" << endl;
+//    }
 
     void demo(short s)
     {
@@ -50,5 +50,20 @@ private:
 
 int main()
 {
+    SignatureDemo sd(5);
+    const SignatureDemo csd(17);
+    sd.demo(2);
+    csd.demo(2);
+    int i = 3;
+    sd.demo(i);
+    short s = 5;
+    sd.demo(s);
+    csd.demo(s);
+    sd.demo(2.3);
+    float f(4.5);
+    sd.demo(f);
+    csd.demo(f);
+    //csd.demo(4.5);
+
     return 0;
 }
