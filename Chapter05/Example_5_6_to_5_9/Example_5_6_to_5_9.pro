@@ -16,7 +16,8 @@ TEMPLATE = app
 
 
 SOURCES += \
-    complex.cpp
+    complex.cpp \
+    complex-test.cpp
 
 HEADERS += \
     complex.h
