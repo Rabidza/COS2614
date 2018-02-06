@@ -16,7 +16,8 @@ TEMPLATE = app
 
 
 SOURCES += \
-    constoverload.cpp
+    constoverload.cpp \
+    constoverload-client.cpp
 
 HEADERS += \
     constoverload.h
