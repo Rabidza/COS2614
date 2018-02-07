@@ -78,3 +78,6 @@ target_wrapper.*
 
 # QtCtreator CMake
 CMakeLists.txt.user*
+
+#Ignore Assignments
+/Assignments
