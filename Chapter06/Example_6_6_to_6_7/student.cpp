@@ -89,7 +89,7 @@ QString GradStudent::supportStr(Support sup)
 {
     switch(sup)
     {
-       case ta:
+        case ta:
             return "ta";
         case ra:
             return "ra";
@@ -101,7 +101,7 @@ QString GradStudent::supportStr(Support sup)
     return "unknown";
 }
 
-QString GradStudent::getClassName() const 
+QString GradStudent::getClassName() const
 {
     return "GradStudent";
 }
