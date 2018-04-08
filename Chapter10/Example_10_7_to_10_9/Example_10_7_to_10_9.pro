@@ -12,7 +12,9 @@ TARGET = Example_10_7_to_10_9
 TEMPLATE = app
 
 
-SOURCES += main.cpp \
+SOURCES += \
+    mymainwindow.cpp \
     mainwindow-main.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += \
+    mymainwindow.h
